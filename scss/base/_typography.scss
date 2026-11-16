@@ -1,0 +1,9 @@
+// 1. Declaramos la fuente personalizada
+@font-face {
+  font-family: 'ZeldaTitulo'; // El nombre que tú quieras inventarle para usarla después
+  src: url('../../assets/fonts/HyliaSerif.otf') format('opentype'); 
+  // Nota: si tu archivo termina en .ttf, cambia format('opentype') por format('truetype')
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; // Evita que el texto desaparezca mientras carga la fuente
+}

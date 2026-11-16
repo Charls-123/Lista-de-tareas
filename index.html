@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -12,58 +12,34 @@
 <body>
     <main>
 
-        <section class="section-nota">
-            <h1>Agregar Nota</h1>
+        <header class="titulo">
+            <h1>Diario del viajero</h1>
+        </header>
 
-            <section id="errores" class="inputs-vacios"></section>
+        <section class="lista-tarea">
+            <div class="tipos-tareas">
+                <ul class="tipos">
+                    <li class="tipo principal">
+                        <span class="texto-oculto">Misiones Principales</span>
+                        <img class="icon" src="/assets/icons/principal.png" alt="Emblema de la familia real">
+                    </li>
+                    <li class="tipo secundaria">
+                        <span class="texto-oculto">Misiones Secundarias</span>
+                        <img class="icon" src="/assets/icons/secundaria.png" alt="Simbolo sheika">
+                    </li>
+                    <li class="tipo opcional">
+                        <span class="texto-oculto">Misiones Heroicas</span>
+                        <img class="icon" src="/assets/icons/opcional.png" alt="">
+                    </li>
+                </ul>
+            </div>
 
-            <form id="formulario" class="form">
-                <div class="campo">
-                    <input type="text" class="input" name="titulo" id="titulo" placeholder="Titulo">
-                </div>
+            <div class="tareas">
 
-                <div class="campos-select">
-                    <div class="campo-select">
-                        <label for="prioridad" class="label-estatico">Prioridad</label>
-                        <select id="prioridad" name="prioridad" >
-                            <option value="-">- - - - -</option>
-                            <option value="baja">Baja</option>
-                            <option value="media">Media</option>
-                            <option value="alta">Alta</option>
-                        </select>
-                    </div>
-
-                    <div class="campo-select">
-                        <label for="estado" class="label-estatico">Estado</label>
-                        <select id="estado" name="estado">
-                            <option value="-">- - - - -</option>
-                            <option value="pendiente">Pendiente</option>
-                            <option value="en curso">En Curso</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="campo">
-                    <input type="text" class="input" name="categoria" id="categoria" placeholder="¿Que tipo de tarea es?">
-                </div>
-
-                <div class="campo">
-                    <textarea name="descripcion" class="textarea" id="descripcion" placeholder="Por favor describe la tarea"></textarea>
-                </div>
-
-                <div class="colores">
-                    <div id="paleta-colores" class="paleta-colores"></div>
-                </div>
-
-
-                <input type="submit" class="btn btn-enviar" value='Crear Nota'/>
-                
-            </form>
+            </div>
         </section>
-        
-        <div>
-            <a href="./Tablon.html" class="cambio">Regresar al tablero de Tareas</a>
-        </div>
+
+        <section class="tarea"></section>
 
     </main>
 

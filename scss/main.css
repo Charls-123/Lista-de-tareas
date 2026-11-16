@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "ZeldaTitulo";
+  src: url("../../assets/fonts/HyliaSerif.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3, p, a {
+  font-family: "ZeldaTitulo";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tipo {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.tipos {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}/*# sourceMappingURL=main.css.map */
