@@ -11,7 +11,15 @@ h1, h2, h3, p, a {
   text-transform: uppercase;
 }
 
-.tipo {
+header {
+  background-color: red;
+}
+
+.tipos {
+  display: flex;
+  gap: 1rem;
+}
+.tipos .tipo {
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -19,13 +27,13 @@ h1, h2, h3, p, a {
   align-items: center;
   gap: 6px;
 }
-
-.tipos {
-  display: flex;
-  gap: 1rem;
-}
-
-.icon {
+.tipos .tipo .icon {
   height: 30px;
   width: 30px;
+}
+.tipos .tipo.principal img {
+  border-radius: 50%;
+}
+.tipos .tipo.principal img:hover {
+  box-shadow: 0 0 8px 15px rgba(255, 215, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */

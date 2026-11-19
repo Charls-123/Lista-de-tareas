@@ -20,6 +20,18 @@ $hylian-crema: #f2ebd9;
 $hylian-texto-tenue: #9ba3ae;
 $hylian-verde-exito: #4ade80;
 
+// 1. Misiones Principales (Amarillo Dorado / Realeza Hyliana)
+$tipo-principal-color: #ffd700; // Dorado brillante
+$tipo-principal-glow: rgba(255, 215, 0, 0.4); // Resplandor dorado
+
+// 2. Misiones Secundarias (Azul / Tecnología Sheikah)
+$tipo-secundaria-color: #00f0ff; // Cian / Azul eléctrico
+$tipo-secundaria-glow: rgba(0, 240, 255, 0.4); // Resplandor cian
+
+// 3. Misiones Heroicas (Verde / Rupia o Espíritu del Héroe)
+$tipo-heroica-color: #22c55e; // Verde esmeralda vibrante
+$tipo-heroica-glow: rgba(34, 197, 94, 0.4); // Resplandor verde
+
 //Tipografia de los elementos
 h1, h2, h3, p, a {
     font-family: 'ZeldaTitulo'; // 'Cinzel' y 'serif' actúan como respaldo
